@@ -149,7 +149,7 @@ const Perspectives = () => {
                       image={report.imageUrl}
                       date={report.date}
                       title={report.title}
-                      link={"/capabilities/perspectives/content-library"}
+                      link={report.pdfUrl}
                     />
                   </div>
                 ))}
