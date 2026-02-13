@@ -2,7 +2,7 @@
 // Always use Vercel backend URL
 // API URL configuration
 const API_URL =
-  import.meta.env.VITE_API_URL || "https://isii-backend.vercel.app/api";
+  import.meta.env.VITE_API_URL || "https://isii-backend-pngo.onrender.com/api";
 
 if (import.meta.env.DEV) {
   console.log("🌐 API URL:", API_URL);
