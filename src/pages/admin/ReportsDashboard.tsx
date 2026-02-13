@@ -15,11 +15,12 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
 import { toast } from 'sonner';
-import { Plus, Edit, Trash2, LogOut, ArrowLeft } from 'lucide-react';
+import { Plus, Edit, Trash2, LogOut } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProtectedRoute from '@/components/admin/ProtectedRoute';
 import ArticleLoader from '@/components/ArticleLoader';
 import SEOHead from '@/components/SEOHead';
+import AdminDashboardTabs from '@/components/admin/AdminDashboardTabs';
 
 interface Report {
   _id: string;
@@ -133,28 +134,14 @@ const ReportsDashboard = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6 md:mb-8">
               <div>
                 <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style={{ color: '#01002A' }}>
-                  Reports Dashboard
+                  Perspectives Dashboard
                 </h1>
                 <p className="text-sm" style={{ color: '#01002A' }}>
                   Manage Perspectives reports
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
-                <Button
-                  variant="outline"
-                  onClick={() => navigate('/admin')}
-                  className="w-full sm:w-auto border-[#01002A] text-[#01002A] hover:bg-[#01002A] hover:text-white"
-                >
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  Articles
-                </Button>
-                <Button
-                  onClick={() => navigate('/admin/reports/new')}
-                  className="w-full sm:w-auto bg-[#01002A] text-white hover:bg-[#01002A]/90 hover:text-white"
-                >
-                  <Plus className="h-4 w-4 mr-2" />
-                  New Report
-                </Button>
+                <AdminDashboardTabs activeTab="perspectives" />
                 <Button
                   variant="outline"
                   onClick={handleLogout}
@@ -164,6 +151,16 @@ const ReportsDashboard = () => {
                   Logout
                 </Button>
               </div>
+            </div>
+
+            <div className="flex justify-end mb-6">
+              <Button
+                onClick={() => navigate('/admin/reports/new')}
+                className="w-full sm:w-auto bg-[#01002A] text-white hover:bg-[#01002A]/90 hover:text-white"
+              >
+                <Plus className="h-4 w-4 mr-2" />
+                New Report
+              </Button>
             </div>
 
             {loading ? (
