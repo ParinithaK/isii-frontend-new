@@ -24,7 +24,6 @@ import Experience from "./pages/Experience";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/admin/Login";
-import AdminHome from "./pages/admin/Home";
 import Dashboard from "./pages/admin/Dashboard";
 import ArticleForm from "./pages/admin/ArticleForm";
 import ReportsDashboard from "./pages/admin/ReportsDashboard";
@@ -60,8 +59,7 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* Admin Routes */}
             <Route path="/admin/login" element={<Login />} />
-            <Route path="/admin" element={<AdminHome />} />
-            <Route path="/admin/pivotal" element={<Dashboard />} />
+            <Route path="/admin" element={<Dashboard />} />
             <Route path="/admin/reports" element={<ReportsDashboard />} />
             <Route path="/admin/articles/new" element={<ArticleForm />} />
             <Route path="/admin/articles/edit/:id" element={<ArticleForm />} />
