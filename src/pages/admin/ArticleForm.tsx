@@ -112,7 +112,7 @@ const ArticleForm = () => {
       }
     } catch (error: any) {
       toast.error(error.message || 'Failed to fetch article');
-      navigate('/admin');
+      navigate('/admin/pivotal');
     } finally {
       setFetching(false);
     }
@@ -281,7 +281,7 @@ const ArticleForm = () => {
         throw saveError; // Re-throw to be caught by outer catch block
       }
 
-      navigate('/admin');
+      navigate('/admin/pivotal');
     } catch (error: any) {
       const errorMessage = error.message || 'Failed to save article';
       toast.error(errorMessage);
@@ -319,7 +319,7 @@ const ArticleForm = () => {
             <div className="mb-8">
               <Button
                 variant="ghost"
-                onClick={() => navigate('/admin')}
+                onClick={() => navigate('/admin/pivotal')}
                 className="mb-4 text-[#01002A] hover:text-white hover:bg-[#01002A]"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
@@ -519,7 +519,7 @@ const ArticleForm = () => {
                 <Button
                   type="button"
                   variant="outline"
-                  onClick={() => navigate('/admin')}
+                  onClick={() => navigate('/admin/pivotal')}
                   className="w-full sm:w-auto border-[#01002A] text-[#01002A] hover:bg-[#01002A] hover:text-white"
                 >
                   Cancel
@@ -534,4 +534,3 @@ const ArticleForm = () => {
 };
 
 export default ArticleForm;
-
