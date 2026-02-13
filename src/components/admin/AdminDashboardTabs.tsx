@@ -23,7 +23,7 @@ const AdminDashboardTabs = ({ activeTab }: AdminDashboardTabsProps) => {
     <div className="flex w-full sm:w-auto gap-2">
       <Button
         variant="outline"
-        onClick={() => navigate('/admin/pivotal')}
+        onClick={() => navigate('/admin')}
         className={getTabClassName(activeTab === 'pivotal-thinking')}
       >
         Pivotal Thinking
