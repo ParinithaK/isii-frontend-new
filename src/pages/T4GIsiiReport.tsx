@@ -1,13 +1,14 @@
 ﻿import Layout from "@/components/Layout";
 
 const bannerImages = {
-  desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/1920.png",
-  desktop1440: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/1440.png",
-  tablet: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Tab.png",
-  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Mobile.png",
+  desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/hero+image+1922.png",
+  desktop1440: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/hero+image+1921.png",
+  tablet: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+Tab.png",
+  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+Mobile.png",
 };
 
-const reportCardImage = "https://isii-v2.s3.ap-south-1.amazonaws.com/images/1_1.png";
+const reportCardImage =
+  "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Screenshot+2026-02-18+161014.png";
 
 const reportUrl = "https://isii-v2.s3.ap-south-1.amazonaws.com/pdfs/1771319324181-ce4dd24c-711e-4289-9ce4-4a28cbf52ca5.pdf";
 
@@ -70,36 +71,40 @@ const T4GIsiiReport = () => {
           <img
             src={bannerImages.mobile}
             alt="T4G ISII Report"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center lg:object-[70%_center] 2xl:object-[75%_center]"
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/35 to-transparent" />
         <div className="absolute inset-0 z-10">
           <div className="container-custom section-padding flex h-full items-end">
             <div className="max-w-3xl pb-10 sm:pb-12 md:pb-12 text-left px-6 md:px-0">
-              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-primary-foreground/70">
+              <p className="font-serif text-xs md:text-sm uppercase tracking-[0.2em] text-white/80">
                 2026 Report
               </p>
-              <h1 className="mt-2 text-2xl md:text-4xl font-serif font-semibold text-primary-foreground">
+              <h1 className="mt-2 font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 Technologies Shaping the Future
               </h1>
-              <p className="mt-3 text-sm md:text-base leading-relaxed text-primary-foreground/90">
-                {introText}
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="container-custom section-padding py-12 md:py-16">
+        <div className="container-custom section-padding py-8 md:py-10">
+          <div className="max-w-5xl">
+            <p className="font-serif text-base leading-relaxed text-foreground">
+              {introText}
+            </p>
+          </div>
+        </div>
+        <div className="container-custom section-padding py-2 md:py-2">
           <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div className="pointer-events-none absolute inset-y-0 right-[320px] hidden w-px bg-slate-200 lg:block" />
-            <div className="space-y-12">
+            <div className="space-y-8">
               {chapters.map((chapter) => (
                 <div
                   key={chapter.title}
-                  className="grid gap-8 md:grid-cols-[220px_1fr] border-b border-slate-200 pb-10"
+                  className="grid gap-6 md:grid-cols-[220px_1fr] border-b border-slate-200 pb-8"
                 >
                   <div>
                     <div className="w-full overflow-hidden bg-slate-100 aspect-[4/3] md:aspect-auto md:h-40">
@@ -110,12 +115,12 @@ const T4GIsiiReport = () => {
                         loading="lazy"
                       />
                     </div>
-                    <h3 className="mt-3 text-base md:text-lg font-serif text-foreground text-center">
+                    <h3 className="mt-2 font-serif text-lg font-bold text-primary text-center">
                       {chapter.title}
                     </h3>
                   </div>
                   <div>
-                    <p className="text-sm md:text-base leading-relaxed text-foreground/80">
+                    <p className="font-serif text-base leading-relaxed text-foreground">
                       {chapter.description}
                     </p>
                   </div>
@@ -125,14 +130,14 @@ const T4GIsiiReport = () => {
 
             <aside className="lg:sticky lg:top-28 h-fit pl-0 lg:pl-6">
               <div className="bg-white w-full md:max-w-[320px] lg:ml-auto">
-                <h4 className="text-lg font-serif font-semibold text-foreground">
+                <h4 className="font-serif text-lg font-bold text-primary">
                   2026 Report: Technologies Shaping the Future
                 </h4>
-                <div className="mt-4 aspect-square w-full overflow-hidden bg-slate-100">
+                <div className="mt-4 aspect-[3/4] w-full overflow-hidden bg-slate-100">
                   <img
                     src={reportCardImage}
                     alt="2026 Report cover"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                     loading="lazy"
                   />
                 </div>
@@ -140,7 +145,7 @@ const T4GIsiiReport = () => {
                   href={reportUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-wide text-foreground/90 hover:text-foreground"
+                  className="mt-4 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-wide text-foreground hover:text-foreground"
                 >
                   <svg
                     aria-hidden="true"
