@@ -71,7 +71,7 @@ const T4GIsiiReport = () => {
           <img
             src={bannerImages.mobile}
             alt="T4G ISII Report"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center lg:object-[70%_center] 2xl:object-[75%_center]"
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/35 to-transparent" />
@@ -133,11 +133,15 @@ const T4GIsiiReport = () => {
                 <h4 className="font-serif text-lg font-bold text-primary">
                   2026 Report: Technologies Shaping the Future
                 </h4>
-                <div className="mt-4 aspect-square w-full overflow-hidden bg-slate-100">
+                <div className="mt-4 aspect-[3/4] w-full overflow-hidden bg-slate-100">
                   <img
                     src={reportCardImage}
                     alt="2026 Report cover"
+<<<<<<< HEAD
+                    className="h-full w-full object-cover object-top"
+=======
                     className="h-full w-full object-contain"
+>>>>>>> 68be4e74f788c06479ba6f29ab95161bb8c1cd8f
                     loading="lazy"
                   />
                 </div>
