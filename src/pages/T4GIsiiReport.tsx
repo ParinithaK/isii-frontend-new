@@ -137,11 +137,7 @@ const T4GIsiiReport = () => {
                   <img
                     src={reportCardImage}
                     alt="2026 Report cover"
-<<<<<<< HEAD
-                    className="h-full w-full object-cover object-top"
-=======
-                    className="h-full w-full object-contain"
->>>>>>> 68be4e74f788c06479ba6f29ab95161bb8c1cd8f
+                    className="h-full w-full object-cover"
                     loading="lazy"
                   />
                 </div>
