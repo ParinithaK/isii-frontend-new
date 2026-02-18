@@ -1,4 +1,4 @@
-﻿import Layout from "@/components/Layout";
+import Layout from "@/components/Layout";
 
 const bannerImages = {
   desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/1920.png",
@@ -92,14 +92,14 @@ const T4GIsiiReport = () => {
       </section>
 
       <section className="bg-white">
-        <div className="container-custom section-padding py-12 md:py-16">
+        <div className="container-custom section-padding py-10 md:py-12">
           <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div className="pointer-events-none absolute inset-y-0 right-[320px] hidden w-px bg-slate-200 lg:block" />
-            <div className="space-y-12">
+            <div className="space-y-8">
               {chapters.map((chapter) => (
                 <div
                   key={chapter.title}
-                  className="grid gap-8 md:grid-cols-[220px_1fr] border-b border-slate-200 pb-10"
+                  className="grid gap-6 md:grid-cols-[220px_1fr] border-b border-slate-200 pb-8"
                 >
                   <div>
                     <div className="w-full overflow-hidden bg-slate-100 aspect-[4/3] md:aspect-auto md:h-40">
@@ -110,7 +110,7 @@ const T4GIsiiReport = () => {
                         loading="lazy"
                       />
                     </div>
-                    <h3 className="mt-3 text-base md:text-lg font-serif text-foreground text-center">
+                    <h3 className="mt-2 text-base md:text-lg font-serif text-foreground text-center">
                       {chapter.title}
                     </h3>
                   </div>
