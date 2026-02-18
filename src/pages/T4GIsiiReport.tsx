@@ -77,7 +77,13 @@ const T4GIsiiReport = () => {
         <div className="container-custom section-padding absolute inset-0 z-10">
           <div className="absolute bottom-8 left-0 right-0 px-4 md:px-8">
             <div className="max-w-3xl text-left">
-              <p className="text-sm md:text-base leading-relaxed text-white/90">
+              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/75">
+                2026 Report
+              </p>
+              <h1 className="mt-2 text-2xl md:text-4xl font-serif font-semibold text-white">
+                Technologies Shaping the Future
+              </h1>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-white/90">
                 {introText}
               </p>
             </div>
@@ -85,10 +91,11 @@ const T4GIsiiReport = () => {
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="bg-white">
         <div className="container-custom section-padding py-12 md:py-16">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-            <div className="space-y-10">
+          <div className="relative grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
+            <div className="pointer-events-none absolute inset-y-0 right-[320px] hidden w-px bg-slate-200 lg:block" />
+            <div className="space-y-12">
               {chapters.map((chapter) => (
                 <div
                   key={chapter.title}
@@ -103,12 +110,12 @@ const T4GIsiiReport = () => {
                         loading="lazy"
                       />
                     </div>
-                    <h3 className="mt-4 text-base md:text-lg font-serif text-slate-900 text-center">
+                    <h3 className="mt-5 text-base md:text-lg font-serif text-slate-900 text-center">
                       {chapter.title}
                     </h3>
                   </div>
                   <div>
-                    <p className="text-sm md:text-base leading-relaxed text-slate-700">
+                    <p className="text-sm md:text-base leading-relaxed text-slate-800">
                       {chapter.description}
                     </p>
                   </div>
@@ -116,26 +123,39 @@ const T4GIsiiReport = () => {
               ))}
             </div>
 
-            <aside className="lg:sticky lg:top-28 h-fit border-l border-slate-200 pl-6">
-              <div className="bg-white border border-slate-200 shadow-sm p-6">
-                <div className="aspect-square w-full overflow-hidden rounded-md bg-slate-100">
+            <aside className="lg:sticky lg:top-28 h-fit pl-6">
+              <div className="bg-white">
+                <h4 className="text-lg font-serif font-semibold text-slate-900">
+                  2026 Report: Technologies Shaping the Future
+                </h4>
+                <div className="mt-4 aspect-square w-full overflow-hidden bg-slate-100">
                   <img
                     src={reportCardImage}
-                    alt="T4G ISII Report cover"
+                    alt="2026 Report cover"
                     className="h-full w-full object-cover"
                     loading="lazy"
                   />
                 </div>
-                <h4 className="mt-6 text-lg font-serif font-semibold text-slate-900">T4G ISII Report</h4>
-                <p className="mt-2 text-sm text-slate-600">
-                  Full report PDF (Technology for Geopolitics · Information Age Transition)
-                </p>
                 <a
                   href={reportUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-slate-900 text-white px-5 py-2 text-sm font-semibold transition hover:bg-slate-800"
+                  className="mt-4 inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-wide text-slate-800 hover:text-slate-950"
                 >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 3v12" />
+                    <path d="m7 10 5 5 5-5" />
+                    <path d="M4 20h16" />
+                  </svg>
                   Download report
                 </a>
               </div>
