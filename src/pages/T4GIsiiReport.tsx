@@ -16,7 +16,7 @@ const introText =
 
 const chapters = [
   {
-    title: "Executive summary",
+    title: "Executive Summary",
     description:
       "The world is in an epochal technological shift that is reshaping civilisation - one that opens extraordinary possibilities while introducing profound risks. Moving beyond innovation metrics, market performance, and geopolitical rivalry, requires asking a deeper question: how advanced technologies are redefining human agency, national sovereignty, and global order.",
     image: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Frame+1.png",
@@ -52,9 +52,9 @@ const chapters = [
     image: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Frame+6.png",
   },
   {
-    title: "Conclusion: Birth of a New Age of Systems",
+    title: "Conclusion",
     description:
-      "Humanity is entering one of the most consequential periods in its history, not because progress has failed, but because it is accelerating faster than the systems designed to govern it. The central question is not whether civilisation will change, but who will shape what comes next.",
+      "Birth of a New Age of Systems. Humanity is entering one of the most consequential periods in its history, not because progress has failed, but because it is accelerating faster than the systems designed to govern it. The central question is not whether civilisation will change, but who will shape what comes next.",
     image: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Frame+7.png",
   },
 ];
@@ -62,7 +62,7 @@ const chapters = [
 const T4GIsiiReport = () => {
   return (
     <Layout>
-      <section className="relative min-h-[380px] md:min-h-[520px] bg-slate-950 overflow-hidden">
+      <section className="relative min-h-[600px] md:min-h-[520px] bg-slate-950 overflow-hidden">
         <picture className="absolute inset-0 block h-full w-full">
           <source media="(min-width: 1440px)" srcSet={bannerImages.desktop1920} />
           <source media="(min-width: 1200px)" srcSet={bannerImages.desktop1440} />
@@ -74,16 +74,16 @@ const T4GIsiiReport = () => {
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/35 to-transparent" />
-        <div className="container-custom section-padding absolute inset-0 z-10">
-          <div className="absolute bottom-8 left-0 right-0 px-4 md:px-8">
-            <div className="max-w-3xl text-left">
-              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/75">
+        <div className="absolute inset-0 z-10">
+          <div className="container-custom section-padding flex h-full items-end">
+            <div className="max-w-3xl pb-10 sm:pb-12 md:pb-12 text-left px-6 md:px-0">
+              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-primary-foreground/70">
                 2026 Report
               </p>
-              <h1 className="mt-2 text-2xl md:text-4xl font-serif font-semibold text-white">
+              <h1 className="mt-2 text-2xl md:text-4xl font-serif font-semibold text-primary-foreground">
                 Technologies Shaping the Future
               </h1>
-              <p className="mt-3 text-sm md:text-base leading-relaxed text-white/90">
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-primary-foreground/90">
                 {introText}
               </p>
             </div>
@@ -102,20 +102,20 @@ const T4GIsiiReport = () => {
                   className="grid gap-8 md:grid-cols-[220px_1fr] border-b border-slate-200 pb-10"
                 >
                   <div>
-                    <div className="h-36 md:h-40 w-full overflow-hidden bg-slate-100">
+                    <div className="w-full overflow-hidden bg-slate-100 aspect-[4/3] md:aspect-auto md:h-40">
                       <img
                         src={chapter.image}
                         alt={chapter.title}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain md:object-cover"
                         loading="lazy"
                       />
                     </div>
-                    <h3 className="mt-5 text-base md:text-lg font-serif text-slate-900 text-center">
+                    <h3 className="mt-3 text-base md:text-lg font-serif text-foreground text-center">
                       {chapter.title}
                     </h3>
                   </div>
                   <div>
-                    <p className="text-sm md:text-base leading-relaxed text-slate-800">
+                    <p className="text-sm md:text-base leading-relaxed text-foreground/80">
                       {chapter.description}
                     </p>
                   </div>
@@ -123,9 +123,9 @@ const T4GIsiiReport = () => {
               ))}
             </div>
 
-            <aside className="lg:sticky lg:top-28 h-fit pl-6">
-              <div className="bg-white">
-                <h4 className="text-lg font-serif font-semibold text-slate-900">
+            <aside className="lg:sticky lg:top-28 h-fit pl-0 lg:pl-6">
+              <div className="bg-white w-full md:max-w-[320px] lg:ml-auto">
+                <h4 className="text-lg font-serif font-semibold text-foreground">
                   2026 Report: Technologies Shaping the Future
                 </h4>
                 <div className="mt-4 aspect-square w-full overflow-hidden bg-slate-100">
@@ -140,7 +140,7 @@ const T4GIsiiReport = () => {
                   href={reportUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-wide text-slate-800 hover:text-slate-950"
+                  className="mt-4 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-wide text-foreground/90 hover:text-foreground"
                 >
                   <svg
                     aria-hidden="true"
@@ -148,7 +148,7 @@ const T4GIsiiReport = () => {
                     className="h-5 w-5"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="1.8"
+                    strokeWidth="2.4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
