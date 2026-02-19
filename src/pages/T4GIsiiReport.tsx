@@ -133,11 +133,11 @@ const T4GIsiiReport = () => {
                 <h4 className="font-serif text-lg font-bold text-primary">
                   2026 Report: Technologies Shaping the Future
                 </h4>
-                <div className="mt-4 aspect-[3/4] w-full overflow-hidden bg-slate-100">
+                <div className="mt-4 w-full bg-slate-100">
                   <img
                     src={reportCardImage}
                     alt="2026 Report cover"
-                    className="h-full w-full object-cover object-top"
+                    className="block h-auto w-full"
                     loading="lazy"
                   />
                 </div>
