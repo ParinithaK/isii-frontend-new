@@ -1,4 +1,4 @@
-﻿import Layout from "@/components/Layout";
+import Layout from "@/components/Layout";
 
 const bannerImages = {
   desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+1922.png",
@@ -77,7 +77,7 @@ const T4GIsiiReport = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/35 to-transparent" />
         <div className="absolute inset-0 z-10">
           <div className="container-custom section-padding flex h-full items-end">
-            <div className="max-w-3xl pb-10 sm:pb-12 md:pb-12 text-left px-6 md:px-0">
+            <div className="max-w-3xl pb-6 sm:pb-10 md:pb-12 text-left px-4 md:px-0">
               <p className="font-serif text-xs md:text-sm uppercase tracking-[0.2em] text-white/80">
                 2026 Report
               </p>
