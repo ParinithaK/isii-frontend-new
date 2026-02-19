@@ -63,7 +63,7 @@ const chapters = [
 const T4GIsiiReport = () => {
   return (
     <Layout>
-      <section className="relative min-h-[600px] md:min-h-[520px] bg-slate-950 overflow-hidden">
+      <section className="relative h-[calc(100svh-5rem)] min-h-[460px] md:h-auto md:min-h-[520px] bg-slate-950 overflow-hidden">
         <picture className="absolute inset-0 block h-full w-full">
           <source media="(min-width: 1440px)" srcSet={bannerImages.desktop1920} />
           <source media="(min-width: 1200px)" srcSet={bannerImages.desktop1440} />
