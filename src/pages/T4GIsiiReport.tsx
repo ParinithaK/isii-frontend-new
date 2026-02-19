@@ -4,7 +4,7 @@ const bannerImages = {
   desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+1922.png",
   desktop1440: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+1923.png",
   tablet: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image(Tab).png",
-  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image(mobile).png",
+  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/hero_image_mbl.png",
 };
 
 const reportCardImage =
