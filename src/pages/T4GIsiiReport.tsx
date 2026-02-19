@@ -1,10 +1,10 @@
 ﻿import Layout from "@/components/Layout";
 
 const bannerImages = {
-  desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/hero+image+1922.png",
-  desktop1440: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/hero+image+1921.png",
-  tablet: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+Tab.png",
-  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+Mobile.png",
+  desktop1920: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+1922.png",
+  desktop1440: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image+1923.png",
+  tablet: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image(Tab).png",
+  mobile: "https://isii-v2.s3.ap-south-1.amazonaws.com/images/Hero+image(mobile).png",
 };
 
 const reportCardImage =
